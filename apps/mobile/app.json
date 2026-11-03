@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Manipuri Bible",
+    "slug": "manipuri-bible",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": { "backgroundColor": "#10100f" },
+    "android": { "package": "org.manipuri.bible" },
+    "ios": { "bundleIdentifier": "org.manipuri.bible" }
+  }
+}

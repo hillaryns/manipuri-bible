@@ -1,0 +1,20 @@
+{
+  "name": "manipuri-bible",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.0.0",
+  "scripts": {
+    "dev:web": "pnpm --filter @manipuri-bible/web dev",
+    "dev:api": "node --watch apps/api/src/server.mjs",
+    "start:api": "node apps/api/src/server.mjs",
+    "test:api-access": "node apps/api/scripts/test-api-bible.mjs",
+    "check:api": "node --check apps/api/src/env.mjs && node --check apps/api/src/server.mjs && node --check apps/api/scripts/test-api-bible.mjs",
+    "dev:mobile": "pnpm --filter @manipuri-bible/mobile start",
+    "build:web": "pnpm --filter @manipuri-bible/web build",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "pg": "^8.23.1",
+    "typescript": "^5.7.3"
+  }
+}
